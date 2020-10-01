@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE8B1B75252581D100CC2DDD /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = FE8B1B74252581D100CC2DDD /* .gitignore */; };
 		FEBE12792522BD28005CEE33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBE12782522BD28005CEE33 /* AppDelegate.swift */; };
 		FEBE127B2522BD28005CEE33 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBE127A2522BD28005CEE33 /* SceneDelegate.swift */; };
 		FEBE127D2522BD28005CEE33 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBE127C2522BD28005CEE33 /* ContentView.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FE8B1B74252581D100CC2DDD /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		FEBE12752522BD28005CEE33 /* AppleMoney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleMoney.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEBE12782522BD28005CEE33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FEBE127A2522BD28005CEE33 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +42,7 @@
 		FEBE126C2522BD28005CEE33 = {
 			isa = PBXGroup;
 			children = (
+				FE8B1B74252581D100CC2DDD /* .gitignore */,
 				FEBE12772522BD28005CEE33 /* AppleMoney */,
 				FEBE12762522BD28005CEE33 /* Products */,
 			);
@@ -133,6 +136,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE8B1B75252581D100CC2DDD /* .gitignore in Resources */,
 				FEBE12852522BD2A005CEE33 /* LaunchScreen.storyboard in Resources */,
 				FEBE12822522BD2A005CEE33 /* Preview Assets.xcassets in Resources */,
 				FEBE127F2522BD2A005CEE33 /* Assets.xcassets in Resources */,
