@@ -142,10 +142,95 @@ struct itemView: View{
                     .onTapGesture {
                         if(self.money>0){
                             self.item.addOne()
+                            if(self.item.price <= 200){
+                                for i in 1...self.item.price {
+                                    Timer.scheduledTimer(withTimeInterval: Double(i)*0.005, repeats: false) { (timer) in
+                                        self.money = self.money - 1
+                                    }
+                                }
+                            }
+                            else if(self.item.price <= 800){
+                                for i in 1...self.item.price {
+                                    Timer.scheduledTimer(withTimeInterval: Double(i)*0.001, repeats: false) { (timer) in
+                                        self.money = self.money - 1
+                                    }
+                                }
+                            }
+                            else if(self.item.price <= 15000){
+                                for i in 1...self.item.price {
+                                    Timer.scheduledTimer(withTimeInterval: Double(i)*0.0001, repeats: false) { (timer) in
+                                        self.money = self.money - 1
+                                    }
+                                }
+                            }
+                            else if(self.item.price <= 280000){
+                                let aux = self.item.price/1000
+                                for i in 1...aux {
+                                    Timer.scheduledTimer(withTimeInterval: Double(i)*0.005, repeats: false) { (timer) in
+                                        self.money = self.money - 1000
+                                    }
+                                }
+                            }
+                            else if(self.item.price <= 1500000){
+                                let aux = self.item.price/10000
+                                for i in 1...aux {
+                                    Timer.scheduledTimer(withTimeInterval: Double(i)*0.01, repeats: false) { (timer) in
+                                        self.money = self.money - 10000
+                                    }
+                                }
+                            }
+                            else if(self.item.price <= 15000000){
+                                let aux = self.item.price/100000
+                                for i in 1...aux {
+                                    Timer.scheduledTimer(withTimeInterval: Double(i)*0.01, repeats: false) { (timer) in
+                                        self.money = self.money - 100000
+                                    }
+                                }
+                            }
+                            else if(self.item.price <= 45000000){
+                                let aux = self.item.price/1000000
+                                for i in 1...aux {
+                                    Timer.scheduledTimer(withTimeInterval: Double(i)*0.025, repeats: false) { (timer) in
+                                        self.money = self.money - 1000000
+                                    }
+                                }
+                            }
+                            else if(self.item.price <= 190000000){
+                                let aux = self.item.price/10000000
+                                for i in 1...aux {
+                                    Timer.scheduledTimer(withTimeInterval: Double(i)*0.02, repeats: false) { (timer) in
+                                        self.money = self.money - 10000000
+                                    }
+                                }
+                            }
+                            else if(self.item.price <= 822000000){
+                                let aux = self.item.price/1000000
+                                for i in 1...aux {
+                                    Timer.scheduledTimer(withTimeInterval: Double(i)*0.002, repeats: false) { (timer) in
+                                        self.money = self.money - 1000000
+                                    }
+                                }
+                            }
+                            else if(self.item.price <= 1700000000){
+                                let aux = self.item.price/10000000
+                                for i in 1...aux {
+                                    Timer.scheduledTimer(withTimeInterval: Double(i)*0.01, repeats: false) { (timer) in
+                                        self.money = self.money - 10000000
+                                    }
+                                }
+                            }
+                            else if(self.item.price <= 60000000000){
+                                let aux = self.item.price/1000000000
+                                for i in 1...aux {
+                                    Timer.scheduledTimer(withTimeInterval: Double(i)*0.025, repeats: false) { (timer) in
+                                        self.money = self.money - 1000000000
+                                    }
+                                }
+                            }
+                            
                             if(self.money - self.item.price < 0){
                                 self.showAlert = true
                             }
-                            self.money = self.money - self.item.price
                         }
                     }
                 }
